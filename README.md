@@ -10,7 +10,7 @@
 #代码测试
   在Coursera文件夹中的代码通过[Codeskulptor](http://www.codeskulptor.org/)进行编写，最终测试效果在Codeskulptor上查看。每个Project的代码均会在开头附上测试地址。其他文件夹下面的代码直接通过本地Python测试即可。
 ###Test
-  Except the files in Coursera dir, you could use envirnments of Python to test the codes. For files in Coursera dir, you should use the [Codeskulptor](http://www.codeskulptor.org/), and I has writed the webaddress of each project at the top of every .py file.
+  Except the files in Coursera dir, you could use any envirnments of Python to test the codes. For files in Coursera dir, you should use the [Codeskulptor](http://www.codeskulptor.org/), and I has writed the webaddress of each project at the top of every .py file.
 #注意事项
   请翻墙测试，部分代码需要加载一些资源文件，该文件位于谷歌的服务器上，因此在中国可能无法访问。
 ###Note
