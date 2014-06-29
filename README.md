@@ -1,4 +1,7 @@
 #关于这个项目
+  这个项目是用来托管我写的各种python程序的。
+  ##This projec is to save all of my Python programs.
+###【Coursera】
   这里记载了我在[Coursera](http://www.coursera.org)上面注册的课程：*An Introduction to Interactive Programming in Python*中， Miniproject的项目代码，代码会在Miniproject截止日期之后上传。
 ###About
   Here are the codes of the Miniproject of *An Introduction to Interactive Programming in Python* in the [Coursera](http://www.coursera.org), and they are updated after the deadline.
