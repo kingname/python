@@ -9,7 +9,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 url = 'http://movie.douban.com/top250'
-road = 'E:\\mystuff\\ss\\'
+#road = 'E:\\mystuff\\ss\\'
 pages = [25,50,75,100,125,150,175,200,225]
 all_movie = []
 
@@ -43,11 +43,12 @@ for page in pages:
     address = 'http://movie.douban.com/top250?start=' + str(page) + '&filter=&type='
     spider_context(address)
 thelist = sorted(all_movie, key=lambda student: student[1],reverse=True)
-file_name =road + "top250_2.txt" 
+#file_name =road + "top250_2.txt"
+file_name = "top250.txt" 
 output = open(file_name,'a')
 for x in range(len(all_movie)):
 	name0 = thelist[x]
 	name = list(name0)
-	title = str(name[0]) + "  score:" + str(name[1])+ " site: " + name[2] +'\n\n'	   			
+	title = str(name[0]) + "  score:" + str(name[1])+ '\n' +" site: " + name[2] +'\n\n'	   			
 	output.write(title)
 output.close()

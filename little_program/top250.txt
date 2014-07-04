@@ -1,0 +1,744 @@
+肖申克的救赎  score:9.6
+ site: http://movie.douban.com/subject/1292052/
+
+这个杀手不太冷  score:9.4
+ site: http://movie.douban.com/subject/1295644/
+
+阿甘正传  score:9.4
+ site: http://movie.douban.com/subject/1292720/
+
+霸王别姬  score:9.4
+ site: http://movie.douban.com/subject/1291546/
+
+美丽人生  score:9.4
+ site: http://movie.douban.com/subject/1292063/
+
+辛德勒的名单  score:9.4
+ site: http://movie.douban.com/subject/1295124/
+
+海豚湾  score:9.3
+ site: http://movie.douban.com/subject/3442220/
+
+机器人总动员  score:9.3
+ site: http://movie.douban.com/subject/2131459/
+
+十二怒汉  score:9.3
+ site: http://movie.douban.com/subject/1293182/
+
+盗梦空间  score:9.2
+ site: http://movie.douban.com/subject/3541415/
+
+海上钢琴师  score:9.2
+ site: http://movie.douban.com/subject/1292001/
+
+三傻大闹宝莱坞  score:9.2
+ site: http://movie.douban.com/subject/3793023/
+
+放牛班的春天  score:9.2
+ site: http://movie.douban.com/subject/1291549/
+
+教父  score:9.2
+ site: http://movie.douban.com/subject/1291841/
+
+忠犬八公的故事  score:9.2
+ site: http://movie.douban.com/subject/3011091/
+
+乱世佳人  score:9.2
+ site: http://movie.douban.com/subject/1300267/
+
+家园  score:9.2
+ site: http://movie.douban.com/subject/3018123/
+
+城市之光  score:9.2
+ site: http://movie.douban.com/subject/1293908/
+
+龙猫  score:9.1
+ site: http://movie.douban.com/subject/1291560/
+
+泰坦尼克号  score:9.1
+ site: http://movie.douban.com/subject/1292722/
+
+天堂电影院  score:9.1
+ site: http://movie.douban.com/subject/1291828/
+
+千与千寻  score:9.1
+ site: http://movie.douban.com/subject/1291561/
+
+两杆大烟枪  score:9.1
+ site: http://movie.douban.com/subject/1293350/
+
+鬼子来了  score:9.1
+ site: http://movie.douban.com/subject/1291858/
+
+触不可及  score:9.1
+ site: http://movie.douban.com/subject/6786002/
+
+窃听风暴  score:9.1
+ site: http://movie.douban.com/subject/1900841/
+
+教父2  score:9.1
+ site: http://movie.douban.com/subject/1299131/
+
+小鞋子  score:9.1
+ site: http://movie.douban.com/subject/1303021/
+
+熔炉  score:9.1
+ site: http://movie.douban.com/subject/5912992/
+
+七武士  score:9.1
+ site: http://movie.douban.com/subject/1295399/
+
+摩登时代  score:9.1
+ site: http://movie.douban.com/subject/1294371/
+
+迁徙的鸟  score:9.1
+ site: http://movie.douban.com/subject/1292281/
+
+爱·回家  score:9.1
+ site: http://movie.douban.com/subject/1299361/
+
+黄金三镖客  score:9.1
+ site: http://movie.douban.com/subject/1401118/
+
+我爱你  score:9.1
+ site: http://movie.douban.com/subject/5908478/
+
+忠犬八公物语  score:9.1
+ site: http://movie.douban.com/subject/1959195/
+
+搏击俱乐部  score:9.0
+ site: http://movie.douban.com/subject/1292000/
+
+大话西游之大圣娶亲  score:9.0
+ site: http://movie.douban.com/subject/1292213/
+
+飞越疯人院  score:9.0
+ site: http://movie.douban.com/subject/1292224/
+
+少年派的奇幻漂流  score:9.0
+ site: http://movie.douban.com/subject/1929463/
+
+指环王3：王者无敌  score:9.0
+ site: http://movie.douban.com/subject/1291552/
+
+钢琴家  score:9.0
+ site: http://movie.douban.com/subject/1296736/
+
+美国往事  score:9.0
+ site: http://movie.douban.com/subject/1292262/
+
+虎口脱险  score:9.0
+ site: http://movie.douban.com/subject/1296909/
+
+海洋  score:9.0
+ site: http://movie.douban.com/subject/3443389/
+
+完美的世界  score:9.0
+ site: http://movie.douban.com/subject/1300992/
+
+天空之城  score:9.0
+ site: http://movie.douban.com/subject/1291583/
+
+狩猎  score:9.0
+ site: http://movie.douban.com/subject/6985810/
+
+追随  score:9.0
+ site: http://movie.douban.com/subject/1397546/
+
+罗马假日  score:8.9
+ site: http://movie.douban.com/subject/1293839/
+
+楚门的世界  score:8.9
+ site: http://movie.douban.com/subject/1292064/
+
+当幸福来敲门  score:8.9
+ site: http://movie.douban.com/subject/1849031/
+
+怦然心动  score:8.9
+ site: http://movie.douban.com/subject/3319755/
+
+闻香识女人  score:8.9
+ site: http://movie.douban.com/subject/1298624/
+
+大话西游之月光宝盒  score:8.9
+ site: http://movie.douban.com/subject/1299398/
+
+美丽心灵  score:8.9
+ site: http://movie.douban.com/subject/1306029/
+
+指环王1：魔戒再现  score:8.9
+ site: http://movie.douban.com/subject/1291571/
+
+指环王2：双塔奇兵  score:8.9
+ site: http://movie.douban.com/subject/1291572/
+
+蝙蝠侠：黑暗骑士  score:8.9
+ site: http://movie.douban.com/subject/1851857/
+
+活着  score:8.9
+ site: http://movie.douban.com/subject/1292365/
+
+飞屋环游记  score:8.9
+ site: http://movie.douban.com/subject/2129039/
+
+死亡诗社  score:8.9
+ site: http://movie.douban.com/subject/1291548/
+
+被嫌弃的松子的一生  score:8.9
+ site: http://movie.douban.com/subject/1787291/
+
+玛丽和马克思  score:8.9
+ site: http://movie.douban.com/subject/3072124/
+
+上帝之城  score:8.9
+ site: http://movie.douban.com/subject/1292208/
+
+阳光姐妹淘  score:8.9
+ site: http://movie.douban.com/subject/4917726/
+
+疯狂原始人  score:8.9
+ site: http://movie.douban.com/subject/1907966/
+
+一一  score:8.9
+ site: http://movie.douban.com/subject/1292434/
+
+饮食男女  score:8.9
+ site: http://movie.douban.com/subject/1291818/
+
+你看起来好像很好吃  score:8.9
+ site: http://movie.douban.com/subject/4848115/
+
+我是山姆  score:8.9
+ site: http://movie.douban.com/subject/1306861/
+
+音乐之声  score:8.9
+ site: http://movie.douban.com/subject/1294408/
+
+勇士  score:8.9
+ site: http://movie.douban.com/subject/3217169/
+
+雨中曲  score:8.9
+ site: http://movie.douban.com/subject/1293460/
+
+地球上的星星  score:8.9
+ site: http://movie.douban.com/subject/2363506/
+
+攻壳机动队  score:8.9
+ site: http://movie.douban.com/subject/1291936/
+
+伴我同行  score:8.9
+ site: http://movie.douban.com/subject/1292925/
+
+自闭历程  score:8.9
+ site: http://movie.douban.com/subject/3236904/
+
+与狼共舞  score:8.9
+ site: http://movie.douban.com/subject/1293764/
+
+天使爱美丽  score:8.8
+ site: http://movie.douban.com/subject/1292215/
+
+无间道  score:8.8
+ site: http://movie.douban.com/subject/1307914/
+
+情书  score:8.8
+ site: http://movie.douban.com/subject/1292220/
+
+勇敢的心  score:8.8
+ site: http://movie.douban.com/subject/1294639/
+
+V字仇杀队  score:8.8
+ site: http://movie.douban.com/subject/1309046/
+
+入殓师  score:8.8
+ site: http://movie.douban.com/subject/2149806/
+
+致命魔术  score:8.8
+ site: http://movie.douban.com/subject/1780330/
+
+大鱼  score:8.8
+ site: http://movie.douban.com/subject/1291545/
+
+哈尔的移动城堡  score:8.8
+ site: http://movie.douban.com/subject/1308807/
+
+萤火虫之墓  score:8.8
+ site: http://movie.douban.com/subject/1293318/
+
+拯救大兵瑞恩  score:8.8
+ site: http://movie.douban.com/subject/1292849/
+
+燃情岁月  score:8.8
+ site: http://movie.douban.com/subject/1295865/
+
+碧海蓝天  score:8.8
+ site: http://movie.douban.com/subject/1300960/
+
+卢旺达饭店  score:8.8
+ site: http://movie.douban.com/subject/1291822/
+
+超脱  score:8.8
+ site: http://movie.douban.com/subject/5322596/
+
+穿条纹睡衣的男孩  score:8.8
+ site: http://movie.douban.com/subject/3008247/
+
+再见我们的幼儿园  score:8.8
+ site: http://movie.douban.com/subject/5960606/
+
+魂断蓝桥  score:8.8
+ site: http://movie.douban.com/subject/1293964/
+
+玩具总动员3  score:8.8
+ site: http://movie.douban.com/subject/1858711/
+
+跳出我天地  score:8.8
+ site: http://movie.douban.com/subject/1301169/
+
+疯狂约会美丽都  score:8.8
+ site: http://movie.douban.com/subject/1291565/
+
+梦之安魂曲  score:8.8
+ site: http://movie.douban.com/subject/1292270/
+
+第六感  score:8.8
+ site: http://movie.douban.com/subject/1297630/
+
+刺猬的优雅  score:8.8
+ site: http://movie.douban.com/subject/3824274/
+
+寿司之神  score:8.8
+ site: http://movie.douban.com/subject/6146955/
+
+相助  score:8.8
+ site: http://movie.douban.com/subject/3792848/
+
+上帝也疯狂2  score:8.8
+ site: http://movie.douban.com/subject/1294490/
+
+风之谷  score:8.8
+ site: http://movie.douban.com/subject/1291585/
+
+迷墙  score:8.8
+ site: http://movie.douban.com/subject/1296157/
+
+惊魂记  score:8.8
+ site: http://movie.douban.com/subject/1293181/
+
+让子弹飞  score:8.7
+ site: http://movie.douban.com/subject/3742360/
+
+七宗罪  score:8.7
+ site: http://movie.douban.com/subject/1292223/
+
+剪刀手爱德华  score:8.7
+ site: http://movie.douban.com/subject/1292370/
+
+低俗小说  score:8.7
+ site: http://movie.douban.com/subject/1291832/
+
+阳光灿烂的日子  score:8.7
+ site: http://movie.douban.com/subject/1291875/
+
+沉默的羔羊  score:8.7
+ site: http://movie.douban.com/subject/1293544/
+
+射雕英雄传之东成西就  score:8.7
+ site: http://movie.douban.com/subject/1316510/
+
+黑客帝国  score:8.7
+ site: http://movie.douban.com/subject/1291843/
+
+心灵捕手  score:8.7
+ site: http://movie.douban.com/subject/1292656/
+
+菊次郎的夏天  score:8.7
+ site: http://movie.douban.com/subject/1293359/
+
+爱在黎明破晓前  score:8.7
+ site: http://movie.douban.com/subject/1296339/
+
+爱在日落黄昏时  score:8.7
+ site: http://movie.douban.com/subject/1291990/
+
+春光乍泄  score:8.7
+ site: http://movie.douban.com/subject/1292679/
+
+海盗电台  score:8.7
+ site: http://movie.douban.com/subject/3007773/
+
+穿越时空的少女  score:8.7
+ site: http://movie.douban.com/subject/1937946/
+
+借东西的小人阿莉埃蒂  score:8.7
+ site: http://movie.douban.com/subject/4202302/
+
+荒野生存  score:8.7
+ site: http://movie.douban.com/subject/1905462/
+
+燕尾蝶  score:8.7
+ site: http://movie.douban.com/subject/1307793/
+
+浪潮  score:8.7
+ site: http://movie.douban.com/subject/2297265/
+
+纵横四海  score:8.7
+ site: http://movie.douban.com/subject/1295409/
+
+英雄本色  score:8.7
+ site: http://movie.douban.com/subject/1297574/
+
+巴黎淘气帮  score:8.7
+ site: http://movie.douban.com/subject/3157605/
+
+教父3  score:8.7
+ site: http://movie.douban.com/subject/1294240/
+
+一次别离  score:8.7
+ site: http://movie.douban.com/subject/5964718/
+
+罗生门  score:8.7
+ site: http://movie.douban.com/subject/1291879/
+
+叫我第一名  score:8.7
+ site: http://movie.douban.com/subject/4798888/
+
+喜宴  score:8.7
+ site: http://movie.douban.com/subject/1303037/
+
+绿里奇迹  score:8.7
+ site: http://movie.douban.com/subject/1300374/
+
+就是这样  score:8.7
+ site: http://movie.douban.com/subject/3920977/
+
+中央车站  score:8.7
+ site: http://movie.douban.com/subject/1292218/
+
+上帝也疯狂  score:8.7
+ site: http://movie.douban.com/subject/1297478/
+
+红辣椒  score:8.7
+ site: http://movie.douban.com/subject/1865703/
+
+我在伊朗长大  score:8.7
+ site: http://movie.douban.com/subject/1962116/
+
+再见列宁  score:8.7
+ site: http://movie.douban.com/subject/1292055/
+
+幽灵公主  score:8.7
+ site: http://movie.douban.com/subject/1297359/
+
+蓝白红三部曲之红  score:8.7
+ site: http://movie.douban.com/subject/1292047/
+
+赛德克·巴莱  score:8.7
+ site: http://movie.douban.com/subject/3993559/
+
+未麻的部屋  score:8.7
+ site: http://movie.douban.com/subject/1395091/
+
+精英部队2：大敌当前  score:8.7
+ site: http://movie.douban.com/subject/4304402/
+
+河童之夏  score:8.7
+ site: http://movie.douban.com/subject/2982823/
+
+魔术师  score:8.7
+ site: http://movie.douban.com/subject/1921583/
+
+无敌破坏王  score:8.7
+ site: http://movie.douban.com/subject/6534248/
+
+阿凡达  score:8.6
+ site: http://movie.douban.com/subject/1652587/
+
+蝴蝶效应  score:8.6
+ site: http://movie.douban.com/subject/1292343/
+
+岁月神偷  score:8.6
+ site: http://movie.douban.com/subject/3792799/
+
+重庆森林  score:8.6
+ site: http://movie.douban.com/subject/1291999/
+
+本杰明·巴顿奇事  score:8.6
+ site: http://movie.douban.com/subject/1485260/
+
+猜火车  score:8.6
+ site: http://movie.douban.com/subject/1292528/
+
+告白  score:8.6
+ site: http://movie.douban.com/subject/4268598/
+
+西西里的美丽传说  score:8.6
+ site: http://movie.douban.com/subject/1292402/
+
+甜蜜蜜  score:8.6
+ site: http://movie.douban.com/subject/1305164/
+
+电锯惊魂  score:8.6
+ site: http://movie.douban.com/subject/1417598/
+
+雨人  score:8.6
+ site: http://movie.douban.com/subject/1291870/
+
+撞车  score:8.6
+ site: http://movie.douban.com/subject/1388216/
+
+人工智能  score:8.6
+ site: http://movie.douban.com/subject/1302827/
+
+幸福终点站  score:8.6
+ site: http://movie.douban.com/subject/1292274/
+
+卡萨布兰卡  score:8.6
+ site: http://movie.douban.com/subject/1296753/
+
+可可西里  score:8.6
+ site: http://movie.douban.com/subject/1308857/
+
+末代皇帝  score:8.6
+ site: http://movie.douban.com/subject/1293172/
+
+猫鼠游戏  score:8.6
+ site: http://movie.douban.com/subject/1305487/
+
+蝴蝶  score:8.6
+ site: http://movie.douban.com/subject/1292056/
+
+牯岭街少年杀人事件  score:8.6
+ site: http://movie.douban.com/subject/1292329/
+
+末路狂花  score:8.6
+ site: http://movie.douban.com/subject/1291992/
+
+莫扎特传  score:8.6
+ site: http://movie.douban.com/subject/1293399/
+
+不一样的天空  score:8.6
+ site: http://movie.douban.com/subject/1301617/
+
+我们俩  score:8.6
+ site: http://movie.douban.com/subject/1756073/
+
+对她说  score:8.6
+ site: http://movie.douban.com/subject/1292211/
+
+布达佩斯之恋  score:8.6
+ site: http://movie.douban.com/subject/1301106/
+
+盲井  score:8.6
+ site: http://movie.douban.com/subject/1307528/
+
+恶童  score:8.6
+ site: http://movie.douban.com/subject/1848925/
+
+老爷车  score:8.6
+ site: http://movie.douban.com/subject/3026357/
+
+我们天上见  score:8.6
+ site: http://movie.douban.com/subject/3732800/
+
+真爱至上  score:8.5
+ site: http://movie.douban.com/subject/1292401/
+
+贫民窟的百万富翁  score:8.5
+ site: http://movie.douban.com/subject/2209573/
+
+秒速五厘米  score:8.5
+ site: http://movie.douban.com/subject/2043546/
+
+东邪西毒  score:8.5
+ site: http://movie.douban.com/subject/1292328/
+
+黑天鹅  score:8.5
+ site: http://movie.douban.com/subject/1978709/
+
+恋恋笔记本  score:8.5
+ site: http://movie.douban.com/subject/1309163/
+
+杀人回忆  score:8.5
+ site: http://movie.douban.com/subject/1300299/
+
+被解救的姜戈  score:8.5
+ site: http://movie.douban.com/subject/6307447/
+
+麦兜故事  score:8.5
+ site: http://movie.douban.com/subject/1302476/
+
+悲惨世界  score:8.5
+ site: http://movie.douban.com/subject/6860160/
+
+战争之王  score:8.5
+ site: http://movie.douban.com/subject/1419936/
+
+倩女幽魂  score:8.5
+ site: http://movie.douban.com/subject/1297447/
+
+阿飞正传  score:8.5
+ site: http://movie.douban.com/subject/1305690/
+
+终结者2  score:8.5
+ site: http://movie.douban.com/subject/1291844/
+
+偷拐抢骗  score:8.5
+ site: http://movie.douban.com/subject/1301171/
+
+加勒比海盗  score:8.5
+ site: http://movie.douban.com/subject/1298070/
+
+茜茜公主  score:8.5
+ site: http://movie.douban.com/subject/1304056/
+
+歌剧魅影  score:8.5
+ site: http://movie.douban.com/subject/1291554/
+
+遗愿清单  score:8.5
+ site: http://movie.douban.com/subject/1867345/
+
+开心家族  score:8.5
+ site: http://movie.douban.com/subject/6019180/
+
+蓝白红三部曲之蓝  score:8.5
+ site: http://movie.douban.com/subject/1292048/
+
+2001太空漫游  score:8.5
+ site: http://movie.douban.com/subject/1292226/
+
+美国X档案  score:8.5
+ site: http://movie.douban.com/subject/1293527/
+
+天水围的日与夜  score:8.5
+ site: http://movie.douban.com/subject/3077668/
+
+枪火  score:8.5
+ site: http://movie.douban.com/subject/1300741/
+
+时时刻刻  score:8.5
+ site: http://movie.douban.com/subject/1305666/
+
+岁月的童话  score:8.5
+ site: http://movie.douban.com/subject/1291588/
+
+朗读者  score:8.4
+ site: http://movie.douban.com/subject/2213597/
+
+香水  score:8.4
+ site: http://movie.douban.com/subject/1760622/
+
+发条橙  score:8.4
+ site: http://movie.douban.com/subject/1292233/
+
+罪恶之城  score:8.4
+ site: http://movie.douban.com/subject/1309027/
+
+曾经  score:8.4
+ site: http://movie.douban.com/subject/2053515/
+
+英国病人  score:8.4
+ site: http://movie.douban.com/subject/1291853/
+
+暖暖内含光  score:8.4
+ site: http://movie.douban.com/subject/1308777/
+
+断背山  score:8.4
+ site: http://movie.douban.com/subject/1418834/
+
+变脸  score:8.4
+ site: http://movie.douban.com/subject/1292659/
+
+蝙蝠侠：黑暗骑士崛起  score:8.4
+ site: http://movie.douban.com/subject/3395373/
+
+买凶拍人  score:8.4
+ site: http://movie.douban.com/subject/1300616/
+
+傲慢与偏见  score:8.4
+ site: http://movie.douban.com/subject/1418200/
+
+她比烟花寂寞  score:8.4
+ site: http://movie.douban.com/subject/1293708/
+
+出租车司机  score:8.4
+ site: http://movie.douban.com/subject/1292222/
+
+速度与激情5  score:8.4
+ site: http://movie.douban.com/subject/4286017/
+
+角斗士  score:8.4
+ site: http://movie.douban.com/subject/1293530/
+
+导盲犬小Q  score:8.4
+ site: http://movie.douban.com/subject/1316572/
+
+黑客帝国3：矩阵革命  score:8.4
+ site: http://movie.douban.com/subject/1302467/
+
+血钻  score:8.4
+ site: http://movie.douban.com/subject/1428175/
+
+荒岛余生  score:8.4
+ site: http://movie.douban.com/subject/1298653/
+
+八月迷情  score:8.4
+ site: http://movie.douban.com/subject/1844413/
+
+两小无猜  score:8.3
+ site: http://movie.douban.com/subject/1308817/
+
+蓝色大门  score:8.3
+ site: http://movie.douban.com/subject/1308575/
+
+爱在暹罗  score:8.3
+ site: http://movie.douban.com/subject/2365260/
+
+源代码  score:8.3
+ site: http://movie.douban.com/subject/3075287/
+
+美国丽人  score:8.3
+ site: http://movie.douban.com/subject/1292062/
+
+新龙门客栈  score:8.3
+ site: http://movie.douban.com/subject/1292287/
+
+无耻混蛋  score:8.3
+ site: http://movie.douban.com/subject/1438652/
+
+夜访吸血鬼  score:8.3
+ site: http://movie.douban.com/subject/1299327/
+
+国王的演讲  score:8.3
+ site: http://movie.douban.com/subject/4023638/
+
+初恋这件小事  score:8.3
+ site: http://movie.douban.com/subject/4739952/
+
+青蛇  score:8.3
+ site: http://movie.douban.com/subject/1303394/
+
+花样年华  score:8.3
+ site: http://movie.douban.com/subject/1291557/
+
+暗战  score:8.3
+ site: http://movie.douban.com/subject/1298898/
+
+那些年，我们一起追的女孩  score:8.2
+ site: http://movie.douban.com/subject/4920528/
+
+桃姐  score:8.2
+ site: http://movie.douban.com/subject/5977835/
+
+老男孩  score:8.2
+ site: http://movie.douban.com/subject/1308865/
+
+第九区  score:8.1
+ site: http://movie.douban.com/subject/3006772/
+
+罗拉快跑  score:8.1
+ site: http://movie.douban.com/subject/1292275/
+
+社交网络  score:8.1
+ site: http://movie.douban.com/subject/3205624/
+
