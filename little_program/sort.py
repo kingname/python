@@ -29,10 +29,11 @@ def spider_context(url):
 	i = 0       
 	code = getsourse(url)
 	info = re.findall('<ol class="grid_view">(.*?)</ol>',code,re.S)
+	mov_add = re.findall('</em>.*?<a href="(.*?)">',info[0],re.S)
 	movie = re.findall('<img alt="(.*?)" src',info[0],re.S)
 	star = re.findall('><em>(.*?)</em></span>',info[0],re.S)	
 	for mov in movie:
-		all_movie.append((mov,star[i]))
+		all_movie.append((mov,star[i],mov_add[i]))
 		i = i + 1
 	   #title = mov + "score:" + star[i] + '\n\n'	   			
 	   #output.write(title)
@@ -42,11 +43,11 @@ for page in pages:
     address = 'http://movie.douban.com/top250?start=' + str(page) + '&filter=&type='
     spider_context(address)
 thelist = sorted(all_movie, key=lambda student: student[1],reverse=True)
-file_name =road + "top250.txt" 
+file_name =road + "top250_2.txt" 
 output = open(file_name,'a')
 for x in range(len(all_movie)):
 	name0 = thelist[x]
 	name = list(name0)
-	title = str(name[0]) + "score:" + str(name[1])+ '\n\n'	   			
+	title = str(name[0]) + "  score:" + str(name[1])+ " site: " + name[2] +'\n\n'	   			
 	output.write(title)
 output.close()
