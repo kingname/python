@@ -3,7 +3,6 @@
 import urllib    
 import urllib2
 import string
-import wx 
 import re
 import sys
 reload(sys)
