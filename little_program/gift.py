@@ -16,7 +16,7 @@ author = 'kingname'
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
-website = 'http://cncaomm.com/read-htm-tid-4246106.html'
+#website = 'http://cncaomm.com/read-htm-tid-4246106.html'
 url = 'http://cncaomm.com/thread-htm-fid-20-page-2.html'
 headers = {
 	
@@ -25,24 +25,24 @@ headers = {
 	       "referer":"cncaomm.com",
 	       "User-Agent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36" 
 }
-
+#获取页面源代码
 def get_page_sourse(url):
 	req = urllib2.Request(url)
 	for key in headers:
 		req.add_header(key,headers[key])
 	return urllib2.urlopen(req).read().decode('utf-8', 'ignore').encode('gbk','ignore')
-
+#通过正则表达式获得含有图片的代码块
 def get_img_url(html):
 	img_group = re.findall('<div class="f14" id="read_tpc">(.*?)<tr class="r_one" id="att_info_display">',html,re.S)
 	return img_group
-
+#图像文件后缀名
 def name(address):
 	if address.find('.jpg'):
 		return 'jpg'
 	else:
 		return 'png'
 
-#get_img_url(get_page_sourse(website))
+#下载图片漫画
 def down_img(img_group,comic_path):
 	img_add = re.findall('<img src="(.*?)" border="0"',img_group,re.S)
 	num = 0
@@ -54,32 +54,23 @@ def down_img(img_group,comic_path):
 			num += 1
 		except Exception as e:
 			print u'下载出错，跳过本图片！'
-#num = 0
-#down_img(get_page_sourse(website))
-#print get_page_sourse(website)
+
+#获取漫画列表
 def get_list(url):
 	sourse = get_page_sourse(url)
 	list_group = re.findall('orderThreadsClass.orderThreads(.*?)<form action="thread.php',sourse,re.S)
-	#print list_group[0]
 	page_address = re.findall('<a name=.*?></a><a href="(.*?)" id="a_ajax.*? class="subject">(.*?)</a>',list_group[0],re.S)
-	#print list_group[0]
-
 	for i in page_address:
 		print 'cncaomm.com/' + i[0]
-		if i[1][0] == '<':
-			print i[1][23:-11]
-		else:
-			print i[1]
 	return page_address
 
+# 为每个漫画新建文件夹
 def to_make_dir(path):
-	#for i in name:
 	new_path = os.path.join(root, path)
 	if not os.path.isdir(new_path):
 		os.makedirs(new_path)
-#get_list(url)
-#for i in range(5):
-#	down_img()
+
+#开始下载
 def down_start(url):
 	n = 0
 	page_address = get_list(url)
@@ -99,7 +90,6 @@ def down_start(url):
 		print img_page_address
 		img_page_html = get_page_sourse(img_page_address)
 		img_url = get_img_url(img_page_html)
-		#print img_url[0]
 		down_img(img_url[0],comic_path)
 
 down_start(url)
