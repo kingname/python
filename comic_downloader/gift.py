@@ -83,6 +83,7 @@ class myFrame(wx.Frame):
 			self.Bind(wx.EVT_BUTTON, self.Onjust, self.button_Onjust)
 			self.Bind(wx.EVT_BUTTON, self.Ondown, self.button_Ondown)
 			self.Bind(wx.EVT_BUTTON, self.Oncancle, self.button_Oncancle)
+			self.Bind(wx.EVT_CLOSE,  self.OnCloseWindow)
 			self.button_Onload.SetDefault()
 			self.button_Onnext.SetDefault()
 			self.button_Onjust.SetDefault()
@@ -126,6 +127,10 @@ class myFrame(wx.Frame):
 		thethread.stop()
 		#Setmessage(u'下载取消！')
 		frame.multiText2.AppendText(u'下载取消！\n')
+
+	def OnCloseWindow(self, event):
+		thethread.stop()
+		self.Destroy()
 
 #发送信息到GUI节目
 def Setmessage(info):
