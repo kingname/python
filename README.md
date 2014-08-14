@@ -11,6 +11,9 @@
   3. pachong.py:本程序将UESTC教务处里面的信息扒取下来，并分别生成html文件。
   4. sort.py: 本程序将豆瓣top250中的电影及其评分扒取下来，并排序输出到一个txt文本中。
 
+###【comic_downloader】
+卖肉漫画下载器
+
 ###About
   This projec is to save all of my Python programs.
 ###【Coursera】
@@ -22,6 +25,8 @@
   2. copy.py: To copy all the .jpg  files of a dir to another special dir.
   3. pachong.py: To get the infomation of the website of UESTC and generate html files.
   4. sort.py: To get movies from Douban's TOP250 and sort them according to the scores.
+###【comic_downloader】
+To download sexal-comics.
   
 #代码测试
   在Coursera文件夹中的代码通过[Codeskulptor](http://www.codeskulptor.org/)进行编写，最终测试效果在Codeskulptor上查看。每个Project的代码均会在开头附上测试地址。其他文件夹下面的代码直接通过本地Python测试即可。
