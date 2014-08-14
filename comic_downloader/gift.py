@@ -14,7 +14,7 @@ import wx
 import threading
 import random
 root = os.getcwd()
-verson = '1.20'
+verson = '1.25'
 author = 'kingname'
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -39,7 +39,7 @@ class WorkerThread(threading.Thread):
 	def stop(self):
 		#self.leave.set()
 		self.thread_stop = True 
-		print "12345"
+		frame.multiText2.AppendText(u'下载终止\n')
 
 	def run(self):
 		img_add = re.findall('<img src="(.*?)" border="0"',self.url,re.S)
@@ -55,29 +55,29 @@ class WorkerThread(threading.Thread):
 
 class myFrame(wx.Frame): 
 	def __init__(self):  
-			wx.Frame.__init__(self, None, -1, u'卖肉漫画下载器v1.20',   
+			wx.Frame.__init__(self, None, -1, u'卖肉漫画下载器v1.25',   
 				size=(780, 730))  
 			panel = wx.Panel(self, -1) 
 			basicLabel = wx.StaticText(panel, -1, u"漫画列表:",) 
 			basicLabel2 = wx.StaticText(panel, -1, u"下载状态：",(380,400)) 
 			basicLabel3 = wx.StaticText(panel, -1, u"在线看漫画功能下个版本开发",(480,200))
-			basicLabel4 = wx.StaticText(panel, -1, u"输入漫画序号:",(380,630))
-			self.basicText = wx.TextCtrl(panel, -1, "",  size=(100, -1),pos = (470,625))  
-			self.basicText.SetInsertionPoint(0)
-			self.multiText = wx.TextCtrl(panel, -1,  
-					u"",  
-					size=(350, 600),pos= (5,20), style=wx.TE_MULTILINE+wx.TE_READONLY) #创建一个文本控件
+			#basicLabel4 = wx.StaticText(panel, -1, u"输入漫画序号:",(380,630))
+			#self.basicText = wx.TextCtrl(panel, -1, "",  size=(100, -1),pos = (470,625))  
+			#self.basicText.SetInsertionPoint(0)
 			self.multiText2 = wx.TextCtrl(panel, -1,  
 					u"下载状态\n",  
 					size=(380, 200),pos= (380,420), style=wx.TE_MULTILINE+wx.TE_READONLY) #创建一个文本控件
+			self.comic_name_list = [] 
+			self.listBox = wx.ListBox(panel, -1, (5, 20), (350, 600), self.comic_name_list,   
+							wx.LB_SINGLE)
 			sizer = wx.FlexGridSizer(rows=3,cols=2, hgap=6, vgap=6)
 			sizer.AddMany([basicLabel])  
 			panel.SetSizer(sizer)
 			self.button_Onload = wx.Button(panel, -1, u"加载首页", pos=(130, 630)) 
 			self.button_Onnext = wx.Button(panel, -1, u"下一页>>", pos=(230, 630)) 
 			self.button_Onjust = wx.Button(panel, -1, u"<<上一页", pos=(30, 630)) 
-			self.button_Ondown = wx.Button(panel, -1, u"开始下载", pos=(580, 630)) 
-			self.button_Oncancle = wx.Button(panel, -1, u"停止下载", pos=(670, 630))
+			self.button_Ondown = wx.Button(panel, -1, u"开始下载", pos=(380, 630)) 
+			self.button_Oncancle = wx.Button(panel, -1, u"停止下载", pos=(470, 630))
 			self.Bind(wx.EVT_BUTTON, self.Onload, self.button_Onload)
 			self.Bind(wx.EVT_BUTTON, self.Onnext, self.button_Onnext)
 			self.Bind(wx.EVT_BUTTON, self.Onjust, self.button_Onjust)
@@ -91,16 +91,15 @@ class myFrame(wx.Frame):
 	
 	#加载首页漫画列表		
 	def Onload(self, event):
-		#down_start(url)
 		addr = url + '2.html'
 		self.comic_list = get_list(addr)
-		
+
 
 	#加载下一页漫画列表
 	def Onnext(self,event):
 		global page
 		page += 1
-		frame.multiText.Clear() 
+		#frame.multiText.Clear() 
 		addr = url + str(page) + '.html'
 		self.comic_list = get_list(addr)
 	
@@ -109,15 +108,18 @@ class myFrame(wx.Frame):
 		global page
 		if page >= 3:
 			page -=1
-			frame.multiText.Clear()
+			#frame.multiText.Clear()
 			addr = url + str(page) + '.html'
 			self.comic_list = get_list(addr)
 	#下载漫画
 	def Ondown(self,event):
-		comic_number = int(self.basicText.GetValue()) - 1
+
+		#comic_number = int(self.basicText.GetValue()) - 1
+		comic_number = self.listBox.GetSelections()
+		#print list(comic_number)[0]
 		#Setmessage(u'开始下载!\n')
 		frame.multiText2.AppendText(u"开始下载！\n")
-		down_start(self.comic_list,comic_number)
+		down_start(self.comic_list,list(comic_number)[0])
 	
 	#取消下载
 	def  Oncancle(self,event):
@@ -166,7 +168,8 @@ def get_list(url):
 		#chardet_detect_str_encoding(name)
 		name = '[' + str(number) + ']' + name  
 		number += 1
-		frame.multiText.AppendText(name.decode('gbk','ignore')+"\n")
+		#frame.multiText.AppendText(name.decode('gbk','ignore')+"\n")
+		frame.listBox.Append(name.decode('gbk','ignore'))
 	return page_address
 
 # 为每个漫画新建文件夹,如果名字重复，则文件夹名后面加上随机数字
