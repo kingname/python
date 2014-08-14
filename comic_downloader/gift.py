@@ -32,6 +32,7 @@ class WorkerThread(threading.Thread):
 	def __init__(self,img_url,comic_path):
 		threading.Thread.__init__(self)
 		self.url = img_url
+		self.count = 0
 		self.comic_path = comic_path
 		self.leave = threading.Event()
 		self.leave.clear()		
@@ -39,13 +40,15 @@ class WorkerThread(threading.Thread):
 	def stop(self):
 		#self.leave.set()
 		self.thread_stop = True 
+		self.count = 0
 		frame.multiText2.AppendText(u'下载终止\n')
 
 	def run(self):
 		img_add = re.findall('<img src="(.*?)" border="0"',self.url,re.S)
 		num = 0
 		#for i in img_add:
-		while num< len(img_add):
+		self.count = len(img_add)
+		while num< self.count:
 			i = img_add[num]
 			img_path = self.comic_path + '\\' + str(num) + '.' + i[-3:]
 			down_img(i,img_path)
@@ -61,9 +64,6 @@ class myFrame(wx.Frame):
 			basicLabel = wx.StaticText(panel, -1, u"漫画列表:",) 
 			basicLabel2 = wx.StaticText(panel, -1, u"下载状态：",(380,400)) 
 			basicLabel3 = wx.StaticText(panel, -1, u"在线看漫画功能下个版本开发",(480,200))
-			#basicLabel4 = wx.StaticText(panel, -1, u"输入漫画序号:",(380,630))
-			#self.basicText = wx.TextCtrl(panel, -1, "",  size=(100, -1),pos = (470,625))  
-			#self.basicText.SetInsertionPoint(0)
 			self.multiText2 = wx.TextCtrl(panel, -1,  
 					u"下载状态\n",  
 					size=(380, 200),pos= (380,420), style=wx.TE_MULTILINE+wx.TE_READONLY) #创建一个文本控件
@@ -114,10 +114,7 @@ class myFrame(wx.Frame):
 			self.comic_list = get_list(addr)
 	#下载漫画
 	def Ondown(self,event):
-
-		#comic_number = int(self.basicText.GetValue()) - 1
 		comic_number = self.listBox.GetSelections()
-		#print list(comic_number)[0]
 		#Setmessage(u'开始下载!\n')
 		frame.multiText2.AppendText(u"开始下载！\n")
 		down_start(self.comic_list,list(comic_number)[0])
