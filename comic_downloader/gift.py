@@ -13,13 +13,15 @@ import os
 import wx
 import threading
 import random
+import time
 root = os.getcwd()
-verson = '1.30'
+verson = '1.35'
 author = 'kingname'
 reload(sys)
 sys.setdefaultencoding('utf-8')
 page = 2
 down = 0
+preview_down = 0
 url = 'http://50.117.115.70/thread-htm-fid-20-page-'
 headers = {
 	
@@ -46,8 +48,8 @@ class WorkerThread(threading.Thread):
 		frame.multiText2.AppendText(u'下载终止\n')
 
 	def run(self):
+		global preview_down
 		img_add = re.findall('<img src="(.*?)" border="0"',self.url,re.S)
-
 		num = 0
 		#for i in img_add:
 		if self.preview == 1:
@@ -60,11 +62,12 @@ class WorkerThread(threading.Thread):
 			down_img(i,img_path)
 			wx.CallAfter(Setmessage,img_path)
 			num +=1	
+		preview_down = 1
 		frame.multiText2.AppendText(u'下载完成\n')	
 
 class myFrame(wx.Frame): 
 	def __init__(self):  
-			wx.Frame.__init__(self, None, -1, u'卖肉漫画下载器v1.30',   
+			wx.Frame.__init__(self, None, -1, u'卖肉漫画下载器v1.35',   
 				size=(780, 730))  
 			panel = wx.Panel(self, -1) 
 			basicLabel = wx.StaticText(panel, -1, u"漫画列表:",) 
@@ -77,7 +80,7 @@ class myFrame(wx.Frame):
 			self.listBox = wx.ListBox(panel, -1, (5, 20), (350, 600), self.comic_name_list,   
 							wx.LB_SINGLE)
 			sizer = wx.FlexGridSizer(rows=3,cols=2, hgap=6, vgap=6)
-			sizer.AddMany([basicLabel])  
+			sizer.AddMany([basicLabel])
 			panel.SetSizerAndFit(sizer)
 			self.button_Onload = wx.Button(panel, -1, u"加载首页", pos=(130, 630)) 
 			self.button_Onnext = wx.Button(panel, -1, u"下一页>>", pos=(230, 630)) 
@@ -102,6 +105,7 @@ class myFrame(wx.Frame):
 	#加载首页漫画列表		
 	def Onload(self, event):
 		addr = url + '2.html'
+		self.listBox.Clear()
 		self.comic_list = get_list(addr)
 
 
@@ -111,6 +115,7 @@ class myFrame(wx.Frame):
 		page += 1
 		#frame.multiText.Clear() 
 		addr = url + str(page) + '.html'
+		self.listBox.Clear()
 		self.comic_list = get_list(addr)
 	
 	#上一页漫画列表
@@ -120,15 +125,31 @@ class myFrame(wx.Frame):
 			page -=1
 			#frame.multiText.Clear()
 			addr = url + str(page) + '.html'
+			self.listBox.Clear()
 			self.comic_list = get_list(addr)
 
 	#预览漫画首页
 	def Onpreview(self,event):
+		global preview_down 
+		preview_down = 0
+		flag = 0
+		n = 0
 		comic_number = self.listBox.GetSelections()
 		down_start(self.comic_list,list(comic_number)[0],preview = 1)
-		img2 = wx.Image('.\\preview\\0.jpg',wx.BITMAP_TYPE_ANY)
-		img1 = img2.Scale(370,400)
-		sb1 = wx.StaticBitmap(self, -1, wx.BitmapFromImage(img1),pos = (380,20))
+		while preview_down ==0:
+			time.sleep(0.5)
+			n +=1
+			if n > 6:
+				frame.multiText2.AppendText(u"预览出错了。。换一本漫画吧。。。\n")
+				flag = 1	
+				break 
+		if flag == 0:
+			try:
+				img2 = wx.Image('.\\preview\\0.jpg',wx.BITMAP_TYPE_ANY)
+				img1 = img2.Scale(370,400)
+				sb1 = wx.StaticBitmap(self, -1, wx.BitmapFromImage(img1),pos = (380,20))
+			except Exception as e:
+				frame.multiText2.AppendText(u"预览出错了。。换一本漫画吧。。。\n")
 
 	#下载漫画
 	def Ondown(self,event):
@@ -207,10 +228,10 @@ def to_make_dir(path,preview = 0):
 	if not os.path.isdir(new_path):
 		os.makedirs(new_path)
 	else:
-	if preview == 0:
-		if os.path.isdir(new_path):
-			new_path += str(random.randint(1,20))
-		os.makedirs(new_path)
+		if preview == 0:
+			if os.path.isdir(new_path):
+				new_path += str(random.randint(1,20))
+			os.makedirs(new_path)
 		
 
 
