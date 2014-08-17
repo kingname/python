@@ -27,7 +27,7 @@
   4. sort.py: To get movies from Douban's TOP250 and sort them according to the scores.
 
 ###【comic_downloader】
-To download sexal-comics.
+To download sexal comics.
   
 #代码测试
   在Coursera文件夹中的代码通过[Codeskulptor](http://www.codeskulptor.org/)进行编写，最终测试效果在Codeskulptor上查看。每个Project的代码均会在开头附上测试地址。其他文件夹下面的代码直接通过本地Python测试即可。
