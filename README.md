@@ -25,6 +25,7 @@
   2. copy.py: To copy all the .jpg  files of a dir to another special dir.
   3. pachong.py: To get the infomation of the website of UESTC and generate html files.
   4. sort.py: To get movies from Douban's TOP250 and sort them according to the scores.
+
 ###【comic_downloader】
 To download sexal-comics.
   
