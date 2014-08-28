@@ -22,7 +22,8 @@ sys.setdefaultencoding('utf-8')
 page = 2
 down = 0
 preview_down = 0
-url = 'http://50.117.115.70/thread-htm-fid-20-page-'
+#url = 'http://50.117.115.70/thread-htm-fid-20-page-'
+url = 'https://cncaomm.com/thread-htm-fid-20-page-'
 headers = {
 	
 	       #"GET":url,
@@ -67,7 +68,7 @@ class WorkerThread(threading.Thread):
 
 class myFrame(wx.Frame): 
 	def __init__(self):  
-			wx.Frame.__init__(self, None, -1, u'卖肉漫画下载器v1.35',   
+			wx.Frame.__init__(self, None, -1, u'卖肉漫画下载器v1.35  by 米汤的奥义',   
 				size=(780, 730))  
 			panel = wx.Panel(self, -1) 
 			basicLabel = wx.StaticText(panel, -1, u"漫画列表:",) 
@@ -135,31 +136,37 @@ class myFrame(wx.Frame):
 		flag = 0
 		n = 0
 		comic_number = self.listBox.GetSelections()
-		down_start(self.comic_list,list(comic_number)[0],preview = 1)
-		while preview_down ==0:
-			time.sleep(0.5)
-			n +=1
-			if n > 6:
-				frame.multiText2.AppendText(u"预览出错了。。换一本漫画吧。。。\n")
-				flag = 1	
-				break 
-		if flag == 0:
-			try:
-				img2 = wx.Image('.\\preview\\0.jpg',wx.BITMAP_TYPE_ANY)
-				img1 = img2.Scale(370,400)
-				sb1 = wx.StaticBitmap(self, -1, wx.BitmapFromImage(img1),pos = (380,20))
-			except Exception as e:
-				frame.multiText2.AppendText(u"预览出错了。。换一本漫画吧。。。\n")
+		if comic_number == ():
+			frame.multiText2.AppendText(u"请先选择一本漫画！\n")
+		else:
+			down_start(self.comic_list,list(comic_number)[0],preview = 1)
+			while preview_down ==0:
+				time.sleep(0.5)
+				n +=1
+				if n > 10:
+					frame.multiText2.AppendText(u"预览出错了。。换一本漫画吧。。。\n")
+					flag = 1	
+					break 
+			if flag == 0:
+				try:
+					img2 = wx.Image('.\\preview\\0.jpg',wx.BITMAP_TYPE_ANY)
+					img1 = img2.Scale(370,400)
+					sb1 = wx.StaticBitmap(self, -1, wx.BitmapFromImage(img1),pos = (380,20))
+				except Exception as e:
+					frame.multiText2.AppendText(u"预览出错了。。换一本漫画吧。。。\n")
 
 	#下载漫画
 	def Ondown(self,event):
 		global down
 		comic_number = self.listBox.GetSelections()
+		if comic_number == ():
+			frame.multiText2.AppendText(u"请先选择一本漫画！\n")
+		else:			
 		#Setmessage(u'开始下载!\n')
-		frame.multiText2.AppendText(u"开始下载！\n")
-		down = 1
-		down_start(self.comic_list,list(comic_number)[0])
-	
+			frame.multiText2.AppendText(u"开始下载！\n")
+			down = 1
+			down_start(self.comic_list,list(comic_number)[0])
+		
 	#取消下载
 	def  Oncancle(self,event):
 		global down
@@ -230,7 +237,7 @@ def to_make_dir(path,preview = 0):
 	else:
 		if preview == 0:
 			if os.path.isdir(new_path):
-				new_path += str(random.randint(1,20))
+				new_path += str(random.randint(1,100))
 			os.makedirs(new_path)
 		
 
@@ -252,10 +259,11 @@ def down_start(comic_list,comic_number,preview = 0):
 			comic_path = root + '\\' + name
 
 		except Exception as e:
-			dir_name = 'comic'+str(random.randint(10,20))
+			dir_name = 'comic'+str(random.randint(10,100))
 			to_make_dir(dir_name)	
 			comic_path = root + '\\' + dir_name
-	img_page_address = 'http://cncaomm.com/' + comic_list[comic_number][0]
+	#img_page_address = 'http://cncaomm.com/' + comic_list[comic_number][0]
+	img_page_address = 'https://cncaomm.com/' + comic_list[comic_number][0]
 	img_page_html = get_page_sourse(img_page_address)
 	img_url = get_img_url(img_page_html)
 	thread = WorkerThread(img_url[0],comic_path,preview)
