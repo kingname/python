@@ -15,7 +15,7 @@ import threading
 import random
 import time
 root = os.getcwd()
-verson = '1.35'
+verson = '1.40'
 author = 'kingname'
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -68,7 +68,7 @@ class WorkerThread(threading.Thread):
 
 class myFrame(wx.Frame): 
 	def __init__(self):  
-			wx.Frame.__init__(self, None, -1, u'卖肉漫画下载器v1.35  by 米汤的奥义',   
+			wx.Frame.__init__(self, None, -1, u'卖肉漫画下载器v1.40  by 青南',   
 				size=(780, 730))  
 			panel = wx.Panel(self, -1) 
 			basicLabel = wx.StaticText(panel, -1, u"漫画列表:",) 
@@ -239,8 +239,6 @@ def to_make_dir(path,preview = 0):
 			if os.path.isdir(new_path):
 				new_path += str(random.randint(1,100))
 			os.makedirs(new_path)
-		
-
 
 #开始下载的函数
 def down_start(comic_list,comic_number,preview = 0):
@@ -264,6 +262,7 @@ def down_start(comic_list,comic_number,preview = 0):
 			comic_path = root + '\\' + dir_name
 	#img_page_address = 'http://cncaomm.com/' + comic_list[comic_number][0]
 	img_page_address = 'https://cncaomm.com/' + comic_list[comic_number][0]
+	img_page_address = re.sub('-fpage-\d+','',img_page_address)
 	img_page_html = get_page_sourse(img_page_address)
 	img_url = get_img_url(img_page_html)
 	thread = WorkerThread(img_url[0],comic_path,preview)
